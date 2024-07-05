@@ -1,0 +1,26 @@
+.imageGalleryList {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.imageGalleryList li {
+  flex-basis: calc((100% - 16px) / 2);
+}
+@media screen and (min-width: 991px) {
+  .imageGalleryList {
+    gap: 24px;
+  }
+  .imageGalleryList li {
+    gap: 24px;
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
+@media screen and (min-width: 991px) {
+  .imageGalleryList {
+    gap: 24px;
+  }
+  .imageGalleryList li {
+    gap: 24px;
+    flex-basis: calc((100% - 48px) / 3);
+  }
+}
