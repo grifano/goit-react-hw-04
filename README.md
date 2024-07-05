@@ -1,6 +1,6 @@
 <img src="./src/assets/react-logo.svg" alt="react logo" width="10%"/>
 
-# React
+# GOIT - React: Image Searching App
 
 ## Module 4: HTTP Requests
 
