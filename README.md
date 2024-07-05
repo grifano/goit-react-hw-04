@@ -2,54 +2,65 @@
 
 # React
 
-## Module 3: Forms
+## Module 4: HTTP Requests
 
 <img src="./src/assets/screenshot.png" alt="profile card, list of cards with animals icons" width="50%"/>
 
-This repository contained the implementation of a phonebook application using React. The project was created with Vite, used Formik for forms, and styled components with CSS modules. The application had several key functionalities, which are summarized below:
+This repository contained the implementation of an image search application using React. The project was created with Vite, used Formik for forms, Axios for HTTP requests, and styled components with CSS modules. The application had several key functionalities, which are summarized below:
 
 ## Functionality Summary
 
-- **Contact Storage**:
+- **Image Search**:
 
-  - Implemented a form to add new contacts.
-  - Displayed a list of contacts.
-  - Included a search box for filtering contacts by name.
+  - Implemented a search bar for keyword-based image search.
+  - Displayed a gallery of images based on search results.
+  - Included pagination to load more images.
 
 - **Component Structure**:
 
   - Each component was organized in its own folder within `src/components`.
   - Default exports were used for all components.
 
-- **Initial Contacts**:
+- **Axios for HTTP Requests**:
 
-  - Predefined contacts were hardcoded for development and testing purposes.
+  - Used Axios to perform HTTP requests to the Unsplash API.
+  - Retrieved images and other relevant information from the API.
 
-- **Search Functionality**:
+- **Initial Setup**:
 
-  - Provided a search input field to filter contacts.
-  - Filter logic was case-insensitive.
+  - Registered for an Unsplash developer account to obtain the access key.
+  - Configured the application to use the Unsplash API for image searches.
 
-- **Form Validation**:
+- **SearchBar Component**:
 
-  - Used Formik for form creation.
-  - Integrated Yup for validation, enforcing:
-    - Required fields
-    - Minimum of 3 characters
-    - Maximum of 50 characters
+  - Created a form with an input field for searching images.
+  - Displayed notifications using React Hot Toast if the search input was empty.
 
-- **Adding Contacts**:
+- **ImageGallery Component**:
 
-  - Implemented functionality to add contacts with `name`, `number`, and a unique `id` generated using `nanoid`.
+  - Rendered a list of image cards.
+  - Only displayed when images were available.
 
-- **Deleting Contacts**:
+- **ImageCard Component**:
 
-  - Allowed users to delete contacts from the list.
+  - Rendered individual images within the gallery.
 
-- **Local Storage**:
+- **Loader Component**:
 
-  - Contacts were saved in local storage upon addition and deletion.
-  - On application load, contacts were retrieved from local storage and set in the state.
+  - Displayed a loading spinner while images were being fetched.
+
+- **ErrorMessage Component**:
+
+  - Displayed error messages when HTTP requests failed.
+
+- **LoadMoreBtn Component**:
+
+  - Rendered a button to load more images.
+  - Only displayed when there were images to load.
+
+- **ImageModal Component**:
+  - Displayed a larger version of the image in a modal window.
+  - Closed the modal on ESC key press or click outside the modal.
 
 ## Live Demo
 
@@ -66,3 +77,14 @@ This repository contained the implementation of a phonebook application using Re
 
 - Ensured no errors or warnings in the console.
 - Maintained clean and understandable JavaScript code using Prettier for formatting.
+
+## Component List
+
+- `App`: The root component containing the main structure.
+- `SearchBar`: Component with a form to search for images.
+- `ImageGallery`: Component to display a list of image cards.
+- `ImageCard`: Individual image item within the gallery.
+- `Loader`: Loading spinner displayed during image fetch.
+- `ErrorMessage`: Displayed when an error occurred during image fetch.
+- `LoadMoreBtn`: Button to load more images.
+- `ImageModal`: Modal window to display an enlarged version of the image.
