@@ -1,11 +1,36 @@
-.searchBarLabel {
-  margin-bottom: 24px;
+.searchBar__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 16px;
+}
+
+.searchBar__Form {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }
-.searchBarInput {
+@media screen and (min-width: 480px) {
+  .searchBar__Form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+}
+.searchBar__Input {
   padding: 8px 16px;
   border-radius: 8px;
-  border: 1px solid #fa8a5b;
+  border: 1px solid #727597;
+}
+.searchBar__Input:focus {
+  border-color: #6ea1ff;
+}
+.searchBar__Input::placeholder {
+  font-size: 14px;
+  opacity: 0.8;
 }

@@ -3,7 +3,7 @@ import css from "./SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
   return (
-    <header>
+    <header className={css.searchBar__header}>
       <Formik
         initialValues={{ query: "" }}
         onSubmit={(values, actions) => {
@@ -11,13 +11,13 @@ export default function SearchBar({ onSearch }) {
           actions.resetForm();
         }}
       >
-        <Form>
+        <Form className={css.searchBar__Form}>
           <Field
-            className={css.searchBoxInput}
+            className={css.searchBar__Input}
             type="text"
             autoComplete="off"
             autoFocus
-            placeholder="Search images and photos"
+            placeholder="Search by word..."
             name="query"
           />
           <button type="submit">Search</button>

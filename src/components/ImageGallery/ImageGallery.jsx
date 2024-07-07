@@ -1,7 +1,7 @@
 import ImageCard from "../ImageCard/ImageCard";
 import css from "./ImageGallery.module.css";
 
-export default function ImageGallery({ images }) {
+export default function ImageGallery({ images, onImageClick }) {
   return (
     <ul className={css.imageGalleryList}>
       {images.map((image) => {
@@ -11,6 +11,9 @@ export default function ImageGallery({ images }) {
             imageThumbSrc={image.urls.small}
             imageFullSrc={image.urls.regular}
             altText={image.alt_description}
+            author={image.user.name}
+            likes={image.likes}
+            onImageClick={onImageClick}
           />
         );
       })}
