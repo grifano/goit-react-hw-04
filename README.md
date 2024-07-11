@@ -64,8 +64,8 @@ This repository contained the implementation of an image search application usin
 
 ## Live Demo
 
-- **Source Files**: [GitHub Repository](https://github.com/grifano/goit-react-hw-03.git)
-- **Working Page**: [Live Preview](https://goit-react-hw-03-sooty-alpha.vercel.app/)
+- **Source Files**: [GitHub Repository](https://github.com/grifano/goit-react-hw-04.git)
+- **Working Page**: [Live Preview](https://goit-react-hw-04-delta-blue.vercel.app/)
 
 ## Project Setup
 
