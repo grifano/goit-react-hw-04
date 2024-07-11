@@ -4,7 +4,7 @@
 
 ## Module 4: HTTP Requests
 
-<img src="./src/assets/screenshot.png" alt="profile card, list of cards with animals icons" width="50%"/>
+<img src="./src/assets/screenshot.png" alt="app screenshot" width="50%"/>
 
 This repository contained the implementation of an image search application using React. The project was created with Vite, used Formik for forms, Axios for HTTP requests, and styled components with CSS modules. The application had several key functionalities, which are summarized below:
 
@@ -88,3 +88,18 @@ This repository contained the implementation of an image search application usin
 - `ErrorMessage`: Displayed when an error occurred during image fetch.
 - `LoadMoreBtn`: Button to load more images.
 - `ImageModal`: Modal window to display an enlarged version of the image.
+
+## Acknowledgments
+
+<img src="https://goit.global/mx/assets/images/logo-goit.svg" alt="goit logo" width="10%"/>
+
+[GOIT](https://edu.goit.global/uk/referral?x=eyJlbWFpbCI6InNvcmxlbmtAZ21haWwuY29tIiwiZmlyc3ROYW1lIjoi0KHQtdGA0LPRltC5IiwibG9jYWxlIjoidWsiLCJsYW5ndWFnZSI6InVrIiwidG90YWxIb3VycyI6NzcsImN1cnJlbnRPckxhc3RUZWNobm9sb2d5IjoiSFRNTF9DU1MiLCJwYXNzZWRIb21ld29ya3NDb3VudCI6NX0=) -
+big love to GoIT team for their patience, afford, help, and positivity that they
+share with us ❤️
+
+## Author
+
+- Website - [www.grifano.com](https://grifano.com)
+- Frontend Mentor -
+  [www.frontendmentor.com](https://www.frontendmentor.io/profile/grifano)
+- LinkedIn - [www.linkedin.com](https://www.linkedin.com/in/grifano/)
